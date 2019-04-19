@@ -11,7 +11,7 @@ class TestCase(unittest.TestCase):
     def test_get_mainpage(self):
         page = self.app.post("/", data=dict(name="Moby Dick"))
         assert page.status_code == 200
-        assert 'Hello' in str(page.data)
+        assert 'sdfkl' in str(page.data)
         assert 'Moby Dick' in str(page.data)
 
     def test_html_escaping(self):
