@@ -5,5 +5,5 @@ WORKDIR /app
 COPY app /app
 COPY cmd.sh /
 
-
+RUN sudo chmod +x /cmd.sh
 CMD ["/cmd.sh"]
