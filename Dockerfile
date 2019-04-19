@@ -7,4 +7,4 @@ WORKDIR /app
 COPY app /app
 COPY cmd.sh /
 
-CMD ["chmod +x /cmd.sh"]
+RUN chmod +x /cmd.sh
