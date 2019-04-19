@@ -5,5 +5,7 @@ WORKDIR /app
 COPY app /app
 COPY cmd.sh /
 
-RUN sudo chmod +x /cmd.sh
+EXPOSE 9090 9191
+USER uwsgi
+
 CMD ["/cmd.sh"]
