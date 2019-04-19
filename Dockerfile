@@ -1,4 +1,4 @@
-FROM python:3.4
+FROM python
 
 RUN pip install flask
 RUN pip install requests
